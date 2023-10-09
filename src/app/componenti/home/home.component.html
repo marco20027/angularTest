@@ -1,0 +1,18 @@
+
+<form class="example-form"  [formGroup]="homeform"(ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nome" value="" formControlName="nome" >
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+        <mat-label></mat-label>
+        <input matInput placeholder="Cognome" value="" formControlName="cognome" >
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Mail</mat-label>
+        <input matInput placeholder="" value="" formControlName="mail">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!homeform.valid" >Primary</button>
+    </form>
+
+    <button mat-raised-button color="primary" (click)="onDeletePersona()" >Elimina Utente</button>
+

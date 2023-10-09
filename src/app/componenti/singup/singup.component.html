@@ -1,0 +1,14 @@
+<h1>Registrazione!</h1>
+<form class="example-form" #homeform="ngForm" (ngSubmit)="onSubmit(homeform)">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email"type="email" value=""  required>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+        <mat-label></mat-label>
+        <input matInput placeholder="Password" type="password"  required>
+      </mat-form-field><br>
+    
+      <button mat-raised-button color="primary" type="submit" [disabled]='!homeform.valid'>Registrati !</button>
+    </form>
+
+

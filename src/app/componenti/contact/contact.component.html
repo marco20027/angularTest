@@ -1,0 +1,11 @@
+<div>
+    <p style="text-transform: uppercase;margin-top: 10px;">Lista</p>
+<div>
+<div *ngFor="let item of persone; index as i">
+    <a routerLink="/contact/{{ i }}">
+        <p>{{item.nome}}  {{item.cognome}}</p>
+    </a>
+</div>
+</div>
+</div>
+<router-outlet></router-outlet>
